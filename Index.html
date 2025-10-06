@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>ORDER NOW</title>
+    <style>
+  
+    body {
+        background-image: url(https://i.pinimg.com/1200x/33/df/37/33df377e5fd3e369c16df53a7290b570.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+  </style>
+  </head>
+    <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Subarro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5501/Index.html">Order Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5503/index.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <br><br><br>
+        <!--Menu Bar-->
+<body class="container mt-4">
+    <div class="mx-auto p-4 border rounded shadow" style="max-width: 400px; background-color: #f8f9fa;">
+        <h1 class="text-center mb-4">Food Ordering System</h1>
+           <input type="checkbox" id="pizza" name="pizza" value="pizza">
+  <label for="pizza">Pizza</label><br>
+   <input type="checkbox" id="burger" name="burger" value="burger">
+  <label for="burger">Burger</label><br>
+   <input type="checkbox" id="spahetti" name="spaghetti" value="spaghetti">
+  <label for="vehicle1">Spahetti</label><br>
+   <input type="checkbox" id="pasta" name="pasta" value="pasta">
+  <label for="pasta">Pasta</label><br>
+   <input type="checkbox" id="salad" name="salad" value="salad">
+  <label for="salad">Salad</label><br>
+   <input type="checkbox" id="chicken" name="roasted chicken" value="roasted chicken">
+  <label for="chicken">Roasted Chicken</label><br>
+    </div>
+    <br/>
+        <!--Customer Details-->
+         <div class="mx-auto p-4 border rounded shadow" style="max-width: 400px; background-color: #f8f9fa;">
+       <h3 class="text-center mb-4">Customer details</h3>
+       <center>
+           <label for="name" class="form-label">Name:</label>
+    <input type="name" id="input1" placeholder="Enter your name"> <br/>
+
+        <label for="number" class="form-label">Number:</label>
+    <input type="number" id="input2" placeholder="Enter your number"> <br/>
+
+     <label for="address" class="form-label">Address:</label>
+    <input type="address" id="input3" placeholder="Enter your number"> <br/>
+
+    <label for="date" class="form-label">Date:</label>
+       <input type="date" name="date"><br/>
+
+           <!--Generate Message-->
+         <br/>   <h3 id="total" class="mt-3">Total:</h3>
+         <div id="profileOutput" class="mt-3 text-center"></div>
+     <py-config>
+      {
+        "fetch": {
+          "files": ["main.py"]
+        }
+      }
+    </py-config>
+     <button type="submit" class="btn-btn-primary" id="Create_order">Create order</button> 
+     <script type="py" src="main.py"></script>
+     </center>
+     </div>
+
+
+</body>
+
+
+    </html>
